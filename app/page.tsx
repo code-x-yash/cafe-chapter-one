@@ -30,7 +30,7 @@ export default function HomePage() {
       <section ref={heroRef} className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="parallax-bg absolute inset-0 z-0">
           <Image
-            src="/images/cafe-exterior-night.jpg"
+            src="/images/cafe-exterior-day.jpg"
             alt="Cafe Chapter One at night"
             fill
             className="object-cover"
@@ -39,26 +39,36 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-coffee/50" />
         </div>
 
-<div className="relative z-10 text-center my-10 px-4 py-1 md:py-16 bg-white/15 rounded-3xl shadow-3xl border border-white/10 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 py-12 md:py-16 bg-white/20 rounded-3xl shadow-2xl border border-white max-w-5xl mx-auto fade-in">
   <div className="mb-10 md:mb-14">
-    <div className="inline-block p-6 md:p-5 rounded-full bg-gold/30 backdrop-blur-md shadow-lg mb-2 md:mb-6">
-      <Coffee className="h-40 w-40 md:h-16 md:w-16 text-gold" />
+    <div className="inline-block p-6 md:p-4 rounded-full bg-gold/30 backdrop-blur-md shadow-lg mb-8 md:mb-6">
+      <Coffee className="h-16 w-16 md:h-16 md:w-16 text-gold" />
     </div>
+    <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 text-white drop-shadow-lg leading-tight">
+      Chapter One
+    </h1>
+    <p className="text-2xl font-semibold text-white/90 drop-shadow-md leading-relaxed max-w-xl mx-auto mb-10 md:mb-12">
+      Sip. Savor. Stay Awhile.
+    </p>
   </div>
-  
-          <div className="flex flex-col sm:flex-row gap-6 md:gap-4 justify-center px-4">
-            <Button asChild className="btn-primary text-xl md:text-lg px-10 py-5 md:px-8 md:py-4">
-              <Link href="/menu">Explore Menu</Link>
-            </Button>
-            <Button
-              asChild
-              variant="primary"
-              className="btn-secondary text-xl md:text-lg px-10 py-5 md:px-8 md:py-4 bg-white"
-            >
-              <Link href="/about">Our Story</Link>
-            </Button>
-          </div>
-        </div>
+
+  <div className="flex flex-col sm:flex-row gap-6 md:gap-4 justify-center px-4">
+    <Button
+      asChild
+      className="text-xl md:text-lg px-10 py-5 md:px-8 md:py-4 rounded-xl bg-gold text-white shadow-md hover:shadow-lg transition-all duration-200"
+    >
+      <Link href="/menu">Explore Menu</Link>
+    </Button>
+    <Button
+      asChild
+      variant="ghost"
+      className="text-xl md:text-lg px-10 py-5 md:px-8 md:py-4 rounded-xl bg-white/90 text-black shadow-md hover:shadow-lg transition-all duration-200"
+    >
+      <Link href="/about">Our Story</Link>
+    </Button>
+  </div>
+</div>
+
       </section>
 
       {/* Welcome Section */}

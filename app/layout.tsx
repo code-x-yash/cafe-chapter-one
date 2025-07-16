@@ -34,6 +34,7 @@ export default function RootLayout({
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
     <head>
       <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     </head>
       <body className="font-sans bg-cream text-coffee">
         <CartProvider>
